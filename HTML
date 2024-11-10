@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Weather Forecast</h1>
+        <div class="current-weather">
+            <video id="current-video" autoplay muted loop></video>
+            <div id="current-weather-data"></div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-day" id="day-1">
+                <video class="forecast-video" autoplay muted loop></video>
+                <div class="forecast-data"></div>
+            </div>
+            <!-- Repeat forecast-day divs for additional days -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
