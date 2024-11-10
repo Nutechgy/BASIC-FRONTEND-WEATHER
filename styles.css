@@ -1,0 +1,101 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background :url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63?q=80&w=2000&h=1000&fit=crop');
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+.header-container {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+ }
+
+
+h1 {
+  color: blue;
+  font-size: auto;
+  display: flex;
+  text-align: center;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+#search-history {
+  margin-top: 20px;
+}
+
+#history-list {
+  list-style: none;
+  padding: 0;
+}
+
+#history-list li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Styles for 5 day forecast */
+.forecast-cards {
+  display: flex; /* or grid */
+  flex-wrap: wrap;
+  justify-content: space-between; /* or other flexbox/grid properties */
+}
+
+
+.forecast-card {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.forecast-card:hover {
+  transform: scale(1.1);
+}
+
+.day {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: blue;
+  z-index: 1;
+}
+.forecast-card .video-container {
+  width: 100%;
+}
+.forecast-card .video-container video {
+  width: 100%;
+}
+
+.weather-details-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Transparent background */
+  color: black;
+}
+
+wi {
+  /* Add necessary styles to display the icon */
+  font-family: "Weather Icons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
